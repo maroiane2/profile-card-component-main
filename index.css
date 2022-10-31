@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    width: 1440px;
+    height: 657px;
+    background: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+.backg {
+        position: absolute;
+}
+.backg1 {
+    top: 300px;
+    left: 700px;
+}
+.backg2 {
+    top: -500px;
+    left: -400px;
+}
+.card {
+    background-color: hsl(0, 0%, 100%);
+    margin: 140px auto;
+    width: 400px;
+    height: 440px;
+    position:relative;
+    z-index: 10;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 180px 180px 80px;
+    grid-template-columns: 1fr;
+}
+/* foto */
+.card .bg-patt{
+    border-radius: 15px 15px 0 0;
+    width: 400px;
+    height: 180px;
+}
+.fo-ba-mi {
+    top: 130px;
+    left: 143px;
+    position: absolute;
+}
+.fo-ba-mi .fo-mi {
+    border: 5px #fff solid;
+    border-radius:50% ;
+}
+/* mi */
+.Na-Ag-Fr {
+    margin-top: 80px;
+    text-align: center;
+}
+.Na-Ag-Fr .name,
+.stats h3{
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+.Na-Ag-Fr .age,
+.Na-Ag-Fr .from,
+.stats p{
+    color:hsl(227, 10%, 46%);
+}
+.Na-Ag-Fr .from {
+    margin-top: 10px;
+}
+.stats {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stats p {
+    font-weight:lighter;
+}
+@media (10px <= width <= 375px) {
+    body {
+        width: 375px;
+        height: 657px;
+    }
+    .card {
+        margin: 50px 110px;
+    }
+}
